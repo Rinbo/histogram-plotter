@@ -4,8 +4,8 @@
 
 graphics_toolkit("gnuplot")
 
-A = normrnd(70,15,1,[1000000]); # Distribution 1 - normrnd(Mu, Sigma, rank, [sample size])
-B = normrnd(70,25,1,[1000000]); # Distribution 2 - normrnd(Mu, Sigma, rank, [sample size])
+A = normrnd(100,15,1,[1000000]); # Distribution 1 - normrnd(Mu, Sigma, rank, [sample size])
+B = normrnd(130,35,1,[1000000]); # Distribution 2 - normrnd(Mu, Sigma, rank, [sample size])
 A = A(find(A>0)); #[optional] - eliminates all samples below 0
 B = B(find(B>0)); #[optional] - eliminates all samples below 0
 
@@ -26,7 +26,7 @@ h2=fill(xs2,ys2,"green");
 set(h1,'facealpha',0.5);
 set(h2,'facealpha',0.5);
 title ("Title goes here");
-h = legend ({"population 1: Mu=50, Sigma=15"}, "Population 2: Mu=50,  Sigma=25");
+h = legend ({"population 1: Mu=100, Sigma=15"}, "Population 2: Mu=130,  Sigma=35");
 legend (h, "location", "northeastoutside");
 xlabel ("Label x-axis"); ylabel ("Label y-axis");
 set (h, "fontsize", 20);

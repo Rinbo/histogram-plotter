@@ -1,5 +1,4 @@
 # Histogram Plotter
-#### Robin Börjesson
 #### 2018-11-26
 Plot two probability distribution as defined by matrix A and B in a unified graph
 
@@ -9,7 +8,9 @@ When I tried to use Excel to combine histograms of two different probablility di
 ## Instructions
 - Clone repo
 - Enter parameters of distribution A and B (gaussian by default)
-``` normrnd(Mu, sigma, rank, [samble_size]) ```
+
+  ``` normrnd(Mu, Sigma, rank, [samble_size]) ```
+
 - Run script
 
-
+![Screenshot](hist.png)
